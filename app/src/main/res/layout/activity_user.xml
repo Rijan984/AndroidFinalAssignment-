@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.UserProfileActivity">
+
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:text="Find Job Here"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnsetting"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    <SearchView
+        android:id="@+id/svjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Job"
+        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        app:layout_constraintTop_toBottomOf="@+id/svjob"></ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
